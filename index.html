@@ -46,10 +46,11 @@
                 <div class="col-md-4">
                     <div class="top-bar-right">
                         <div class="social">
-                            <a href=""><i class="fab fa-twitter"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-linkedin-in"></i></a>
-                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <!-- <a href=""><i class="fab fa-twitter"></i></a> -->
+                            <!-- <a href=""><i class="fab fa-facebook-f"></i></a> -->
+                            <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
+                            <a href="https://www.instagram.com/connect_humanity_foundation?igsh=dHFhMXoyMTJyYnA3"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.link/9ihdgb"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +62,10 @@
     <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-            <a href="index.html" class="navbar-brand">CONNECT HUMANITY</a>
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <img src="img/logopng.png" alt="CONNECT HUMANITY Logo" style="height: 40px; margin-right: 8px;"> <!-- Adjust height and margin as needed -->
+                <span style="font-size: 14px;">CONNECT HUMANITY</span> <!-- Adjust font size as needed -->
+            </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -70,8 +74,8 @@
                 <div class="navbar-nav ml-auto">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="causes.html" class="nav-item nav-link">Causes</a>
-                    <a href="event.html" class="nav-item nav-link">Events</a>
+                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     <!-- <a href="blog.html" class="nav-item nav-link">Blog</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -83,7 +87,7 @@
                             <a href="volunteer.html" class="dropdown-item">Become A Volunteer</a>
                         </div>
                     </div> -->
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="program.html" class="nav-item nav-link">Program</a>
                 </div>
             </div>
         </div>
@@ -106,10 +110,8 @@
                             consequat at lectus in malesuada
                         </p>
                         <div class="carousel-btn">
-                            <a class="btn btn-custom" href="">Donate Now</a>
-                            <a class="btn btn-custom btn-play" data-toggle="modal"
-                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch
-                                Video</a>
+                            <a class="btn btn-custom" href="program.html">Donate Now</a>
+
                         </div>
                     </div>
                 </div>
@@ -124,10 +126,8 @@
                             sodales varius fermentum, tortor
                         </p>
                         <div class="carousel-btn">
-                            <a class="btn btn-custom" href="">Donate Now</a>
-                            <a class="btn btn-custom btn-play" data-toggle="modal"
-                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch
-                                Video</a>
+                            <a class="btn btn-custom" href="program.html">Donate Now</a>
+
                         </div>
                     </div>
                 </div>
@@ -142,10 +142,8 @@
                             euismod quam. Proin pellentesque odio
                         </p>
                         <div class="carousel-btn">
-                            <a class="btn btn-custom" href="">Donate Now</a>
-                            <a class="btn btn-custom btn-play" data-toggle="modal"
-                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch
-                                Video</a>
+                            <a class="btn btn-custom" href="program.html">Donate Now</a>
+
                         </div>
                     </div>
                 </div>
@@ -324,7 +322,7 @@
 
 
     <!-- Facts Start -->
-    <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
+    <!-- <div class="facts" data-parallax="scroll" data-image-src="img/facts.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
@@ -365,7 +363,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Facts End -->
 
 
@@ -488,7 +486,7 @@
 
 
     <!-- Donate Start -->
-    <div class="donate" data-parallax="scroll" data-image-src="img/donate.jpg">
+    <!-- <div class="donate" data-parallax="scroll" data-image-src="img/donate.jpg">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7">
@@ -537,12 +535,198 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <style>
+        .custom-container {
+            background-color: #ec4899;
+            /* Tailwind bg-pink-500 */
+            color: white;
+            padding: 1.5rem;
+            /* Tailwind p-6 */
+            border-radius: 0.5rem;
+            /* Tailwind rounded-lg */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            /* Tailwind shadow-lg */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .custom-left-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem;
+            /* Space for small screens */
+        }
+
+        .custom-icon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .custom-icon {
+            width: 4rem;
+            /* Tailwind w-16 */
+            height: 4rem;
+            /* Tailwind h-16 */
+        }
+
+        .custom-button {
+            background-color: #22c55e;
+            /* Tailwind bg-green-500 */
+            color: white;
+            padding: 0.5rem 1rem;
+            /* Tailwind px-4 py-2 */
+            margin-top: 1rem;
+            /* Tailwind mt-4 */
+            border-radius: 0.375rem;
+            /* Tailwind rounded */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            /* Tailwind shadow */
+            transition: background-color 0.3s;
+        }
+
+        .custom-button:hover {
+            background-color: #16a34a;
+            /* Tailwind hover:bg-green-600 */
+        }
+
+        .custom-right-section {
+            flex: 1;
+            text-align: center;
+        }
+
+        .custom-description {
+            font-size: 1.125rem;
+            /* Tailwind text-lg */
+            font-weight: 600;
+            /* Tailwind font-semibold */
+        }
+
+        .custom-cards-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+            /* Space between description and cards */
+        }
+
+        .custom-cards-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            /* Space between cards for small screens */
+        }
+
+        @media (min-width: 768px) {
+            .custom-cards-container {
+                flex-direction: row;
+            }
+        }
+
+        .custom-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .custom-card-icon {
+            background-color: white;
+            color: #ec4899;
+            /* Tailwind text-pink-500 */
+            width: 3rem;
+            /* Tailwind w-12 */
+            height: 3rem;
+            /* Tailwind h-12 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 9999px;
+            /* Tailwind rounded-full */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            /* Tailwind shadow */
+        }
+
+        .custom-card-img {
+            width: 2rem;
+            /* Tailwind w-8 */
+            height: 2rem;
+            /* Tailwind h-8 */
+        }
+
+        .custom-card-price {
+            font-size: 1.125rem;
+            /* Tailwind text-lg */
+            font-weight: bold;
+            /* Tailwind font-bold */
+            margin-top: 0.5rem;
+            /* Tailwind mt-2 */
+        }
+
+        .custom-card-description {
+            font-size: 0.875rem;
+            /* Tailwind text-sm */
+            text-align: center;
+        }
+    </style>
+
+    <div class="custom-container">
+        <!-- Left Section -->
+        <div class="custom-left-section">
+            <div class="custom-icon-container">
+                <img src="img/boy-girl.png" alt="Male Icon" class="custom-icon" />
+                <a href="program.html" class="custom-button">Donate Now</a>
+            </div>
+        </div>
+        
+
+        <!-- Right Section -->
+        <div class="custom-right-section">
+            <p class="custom-description">
+                Improving the quality of government schools where girls from most marginalized communities study,
+                through customized curriculums, teachers training programmes and community mobilisation.
+            </p>
+
+            <!-- Pricing Cards -->
+            <div class="custom-cards-container">
+                <!-- Card 1 -->
+                <div class="custom-card">
+                    <div class="custom-card-icon">
+                        <img src="img/donation.png" alt="Donation Icon" class="custom-card-img" />
+                    </div>
+                    <p class="custom-card-price">INR 4000</p>
+                    <p class="custom-card-description">Can support education of one out-of-school girl</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="custom-card">
+                    <div class="custom-card-icon">
+                        <img src="img/donation.png" alt="Donation Icon" class="custom-card-img" />
+                    </div>
+                    <p class="custom-card-price">INR 8000</p>
+                    <p class="custom-card-description">Can support education of two out-of-school girls</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="custom-card">
+                    <div class="custom-card-icon">
+                        <img src="img/donation.png" alt="Donation Icon" class="custom-card-img" />
+                    </div>
+                    <p class="custom-card-price">INR 40000</p>
+                    <p class="custom-card-description">Can support education of ten out-of-school girls</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+
     <!-- Donate End -->
 
 
     <!-- Event Start -->
-    <div class="event">
+    <!-- <div class="event">
         <div class="container">
             <div class="section-header text-center">
                 <p>Upcoming Events</p>
@@ -591,12 +775,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Event End -->
 
 
     <!-- Team Start -->
-    <div class="team">
+    <!-- <div class="team">
         <div class="container">
             <div class="section-header text-center">
                 <p>Meet Our Team</p>
@@ -673,12 +857,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Team End -->
 
 
     <!-- Volunteer Start -->
-    <div class="volunteer" data-parallax="scroll" data-image-src="img/volunteer.jpg">
+    <!-- <div class="volunteer" data-parallax="scroll" data-image-src="img/volunteer.jpg">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -717,12 +901,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Volunteer End -->
 
 
     <!-- Testimonial Start -->
-    <div class="testimonial">
+    <!-- <div class="testimonial">
         <div class="container">
             <div class="section-header text-center">
                 <p>Testimonial</p>
@@ -791,12 +975,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
 
     <!-- Contact Start -->
-    <div class="contact">
+    <!-- <div class="contact">
         <div class="container">
             <div class="section-header text-center">
                 <p>Get In Touch</p>
@@ -834,7 +1018,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Contact End -->
 
 
@@ -907,67 +1091,112 @@
 
 
     <!-- Footer Start -->
+    <style>
+        .footer-other-points ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-other-points ul li {
+            margin: 5px 0;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .footer-other-points ul li i {
+            color: #f39c12;
+            /* Gold color for checkmark icon */
+            margin-right: 8px;
+        }
+    </style>
     <div class="footer">
         <div class="container">
             <div class="row">
+                <!-- Our Head Office Section -->
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-contact">
                         <h2>Our Head Office</h2>
-                        <p><i class="fa fa-map-marker-alt"></i>Shop No. E-33 Jai Sheetal Complex, Inderlok Phase 3, Near Om Shanti Chawk, Bhayander East, Thane - 401105</p>
-                        <p><i class="fa fa-phone-alt"></i>+91-8424848913</p>
-                        <p><i class="fa fa-envelope"></i>connecthumanityfoundatiom@gmail.com</p>
+                        <p><i class="fa fa-map-marker-alt"></i>  Office No.4, Ashtvinayak society no.5 Kalyan Thane (M Corp.) Titwala East 421605</p>
+                        <p><i class="fa fa-phone-alt"></i> +91-8424848913</p>
+                        <p><i class="fa fa-envelope"></i> connecthumanityfoundatiom@gmail.com</p>
                         <div class="footer-social">
-                            <a class="btn btn-custom" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-custom" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-custom" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-custom" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-custom" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <!-- <a class="btn btn-custom" href=""><i class="fab fa-twitter"></i></a> -->
+                            <!-- <a class="btn btn-custom" href=""><i class="fab fa-facebook-f"></i></a> -->
+                            <!-- <a class="btn btn-custom" href=""><i class="fab fa-youtube"></i></a> -->
+                            <a class="btn btn-custom" href="https://www.instagram.com/connect_humanity_foundation?igsh=dHFhMXoyMTJyYnA3"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-custom" href="https://wa.link/9ihdgb"><i class="fab fa-whatsapp"></i></a>
+                            <!-- <a class="btn btn-custom" href=""><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
                     </div>
                 </div>
+
+                <!-- Bank Details Section -->
                 <div class="col-lg-3 col-md-6">
-                    <div class="footer-link">
-                        <h2>Popular Links</h2>
-                        <a href="">About Us</a>
-                        <a href="">Contact Us</a>
-                        <a href="">Popular Causes</a>
-                        <a href="">Upcoming Events</a>
-                        <a href="">Latest Blog</a>
+                    <div class="footer-bank-details">
+                        <h2 style="color: #f39c12;">Bank Details</h2>
+                        <table>
+                            <tr>
+                                <td style="color:white"><strong>Bank Name:</strong></td>
+                                <td style="color:white">IDFC Bank</td>
+                            </tr>
+                            <tr>
+                                <td style="color:white"><strong>Account Number:</strong></td>
+                                <td style="color:white">10140800365</td>
+                            </tr>
+                            <tr>
+                                <td style="color:white"><strong>Branch:</strong></td>
+                                <td style="color:white">Malad Branch</td>
+                            </tr>
+                            <tr>
+                                <td style="color:white"><strong>IFSC Code:</strong></td>
+                                <td style="color:white">IDFB0040114</td>
+                            </tr>
+                            <tr>
+                                <td style="color:white"><strong>NGO PAN Number:</strong></td>
+                                <td style="color:white">AADTC2891C</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
+
+                <!-- Other Points Section -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-other-points">
+                        <h2 style="color: #f39c12;">Other Points</h2>
+                        <ul>
+                            <li><i class="fa fa-check"></i> Open Registration for Volunteers</li>
+                            <li><i class="fa fa-check"></i> Free Educational Programs</li>
+                            <li><i class="fa fa-check"></i> Monthly Health Camps</li>
+                            <li><i class="fa fa-check"></i> Environmental Awareness Drives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Useful Links Section -->
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-link">
                         <h2>Useful Links</h2>
-                        <a href="">Terms of use</a>
-                        <a href="">Privacy policy</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FQAs</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-newsletter">
-                        <h2>Newsletter</h2>
-                        <form>
-                            <input class="form-control" placeholder="Email goes here">
-                            <button class="btn btn-custom">Submit</button>
-                            <label>Don't worry, we don't spam!</label>
-                        </form>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="program.html">Program</a>
+                        <!-- <a href="">FAQs</a> -->
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Footer Bottom Section -->
         <div class="container copyright">
             <div class="row">
                 <div class="col-md-6">
                     <p>&copy; <a href="#">Connect Humanity Foundation</a>, All Right Reserved.</p>
                 </div>
-                <div class="col-md-6">
-                    <p>Designed By <a href="https://github.com/deecodek">Deecodek</a></p>
-                </div>
+
             </div>
         </div>
     </div>
+
     <!-- Footer End -->
 
     <!-- Back to top button -->
