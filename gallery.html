@@ -49,7 +49,8 @@
                             <!-- <a href=""><i class="fab fa-twitter"></i></a> -->
                             <!-- <a href=""><i class="fab fa-facebook-f"></i></a> -->
                             <!-- <a href=""><i class="fab fa-linkedin-in"></i></a> -->
-                            <a href="https://www.instagram.com/connect_humanity_foundation?igsh=dHFhMXoyMTJyYnA3"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/connect_humanity_foundation?igsh=dHFhMXoyMTJyYnA3"><i
+                                    class="fab fa-instagram"></i></a>
                             <a href="https://wa.link/9ihdgb"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
@@ -63,8 +64,10 @@
     <div class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand d-flex align-items-center">
-                <img src="img/logopng.png" alt="CONNECT HUMANITY Logo" style="height: 60px; margin-right: 12px;"> <!-- Increased height and adjusted margin -->
-                <span style="font-size: 16px; line-height: 1.2;">CONNECT HUMANITY <br> FOUNDATION</span> <!-- Increased font size and adjusted line height -->
+                <img src="img/logopng.png" alt="CONNECT HUMANITY Logo" style="height: 60px; margin-right: 12px;">
+                <!-- Increased height and adjusted margin -->
+                <span style="font-size: 16px; line-height: 1.2;">CONNECT HUMANITY <br> FOUNDATION</span>
+                <!-- Increased font size and adjusted line height -->
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -211,230 +214,265 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
         <h1 class="heading"><span>Our Contribution</span></h1>
 
-        <div class="gallery">
+        <div class="gallery-container">
+            <!-- Buttons to Toggle Content -->
+            <div class="gallery-toggle">
+             <!-- Buttons to Toggle Content -->
+<div class="gallery-toggle">
+    <button id="show-images-btn" onclick="showGallery('images')">Show Images</button>
+    <button id="show-videos-btn" onclick="showGallery('videos')">Show Videos</button>
+</div>
 
-            <!-- Gallery HTML Structure -->
-            <div class="gallery">
+<!-- CSS Styles -->
+<style>
+    .gallery-toggle {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .gallery-toggle button {
+        padding: 15px 30px; /* Increased padding */
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        font-size: 16px; /* Increased font size */
+        min-width: 120px; /* Minimum width */
+    }
+
+    .gallery-toggle button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+            </div>
+
+            <!-- Image Gallery -->
+            <div class="gallery" id="image-gallery">
                 <div class="gallery-item">
-                    <video class="gallery-image" src="videos/ngo.mp4" alt="NGO Video" onclick="openVideoModal(this.src)"
+                    <img class="gallery-image" src="img/distribution/1.jpeg" alt="img">
+                </div>
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/2.jpeg" alt="img">
+                </div>
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/3.jpeg" alt="img">
+                </div>
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/4.jpeg" alt="img">
+                </div>
+
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/5.jpeg" alt="img">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/6.jpeg" alt="img">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/7.jpeg" alt="img">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/8.jpeg" alt="img">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/9.jpeg" alt="img">
+                </div>
+                <div class="">
+                    <img class="gallery-image" src="img/distribution/10.jpeg" alt="img" style="height: 400px; width: auto; max-width: 100%; object-fit: cover;">
+                </div>
+                <div class="">
+                    <img class="gallery-image" src="img/distribution/11.jpeg" alt="img" style="height: 400px; width: auto; max-width: 100%; object-fit: cover;">
+                </div>
+                <div class="">
+                    <img class="gallery-image" src="img/distribution/12.jpeg" alt="img" style="height: 400px; width: auto; max-width: 100%; object-fit: cover;">
+                </div>
+                <div class="">
+                    <img class="gallery-image" src="img/distribution/13.jpeg" alt="img" style="height: 400px; width: auto; max-width: 100%; object-fit: cover;">
+                </div>
+                <div class="">
+                    <img class="gallery-image" src="img/distribution/22.jpeg" alt="img" style="height: 400px; width: auto; max-width: 100%; object-fit: cover;">
+                </div>
+                <div class="">
+                    <img class="gallery-image" src="img/distribution/21.jpeg" alt="img" style="height: 400px; width: auto; max-width: 100%; object-fit: cover;">
+                </div>
+                
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/14.jpeg" alt="img">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/15.jpeg" alt="img">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/16.jpeg" alt="img">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/17.jpeg" alt="img">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/18.jpeg" alt="img">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/19.jpeg" alt="img">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/101.jpg" alt="img">
+                </div>
+                <div class="gallery-item">
+                    <img class="gallery-image" src="img/distribution/102.jpg" alt="img">
+                </div>
+            </div>
+
+            <!-- Video Gallery -->
+            <div class="gallery" id="video-gallery" style="display: none;">
+                <div class="gallery-item">
+                    <video class="gallery-video" src="videos/ngo.mp4" alt="Video 1" onclick="openVideoModal(this.src)"
                         controls muted></video>
                 </div>
-            </div>
-            <!-- <div class="gallery">
                 <div class="gallery-item">
-                    <video class="gallery-image" src="videos/ngo2.mp4" alt="NGO Video" onclick="openVideoModal(this.src)"
+                    <video class="gallery-video" src="videos/ngo2.mp4" alt="Video 2" onclick="openVideoModal(this.src)"
                         controls muted></video>
                 </div>
-            </div> -->
-            <!-- Modal Structure -->
-            <div id="video-modal" class="modal">
-                <div class="modal-content">
-                    <button class="close" onclick="closeVideoModal(event)">&times;</button>
-                    <video id="modal-video" controls autoplay></video>
-                </div>
-            </div>
-
-            <!-- CSS Styles -->
-            <style>
-                /* Gallery Styles */
-                .gallery {
-                    display: flex;
-                    gap: 10px;
-                    flex-wrap: wrap;
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                }
-
-                .gallery-item {
-                    flex: 1 1 300px;
-                    cursor: pointer;
-                }
-
-                .gallery video {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
-
-                /* Modal Styles */
-                .modal {
-                    display: none;
-                    position: fixed;
-                    z-index: 1000;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(0, 0, 0, 0.8);
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .modal-content {
-                    position: relative;
-                    max-width: 90%;
-                    max-height: 90%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background-color: #000;
-                    border-radius: 10px;
-                    overflow: hidden;
-                }
-
-                .modal-content video {
-                    max-width: 100%;
-                    max-height: 100%;
-                }
-
-                .close {
-                    position: absolute;
-                    top: 10px;
-                    right: 10px;
-                    color: #fff;
-                    font-size: 30px;
-                    font-weight: bold;
-                    cursor: pointer;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    border: none;
-                    border-radius: 50%;
-                    width: 50px;
-                    height: 50px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    z-index: 10;
-                    /* Ensures the button is above other elements */
-                    padding: 10px;
-                }
-
-                .close:hover {
-                    background-color: rgba(255, 0, 0, 0.7);
-                }
-            </style>
-
-            <!-- JavaScript Functions -->
-            <script>
-                // Open Modal and Play Video
-                function openVideoModal(videoSrc) {
-                    const modal = document.getElementById('video-modal');
-                    const modalVideo = document.getElementById('modal-video');
-
-                    modal.style.display = 'flex'; // Show the modal
-                    modalVideo.src = videoSrc; // Set video source
-                    modalVideo.play(); // Start playing the video
-                }
-
-                // Close Modal and Stop Video
-                function closeVideoModal(event) {
-                    event.stopPropagation(); // Prevent triggering video play/pause
-                    const modal = document.getElementById('video-modal');
-                    const modalVideo = document.getElementById('modal-video');
-
-                    modal.style.display = 'none'; // Hide the modal
-                    modalVideo.pause(); // Pause the video
-                    modalVideo.src = ''; // Clear the video source
-                }
-
-                // Close Modal on Outside Click
-                window.onclick = function (event) {
-                    const modal = document.getElementById('video-modal');
-                    if (event.target === modal) {
-                        closeVideoModal(event);
-                    }
-                };
-            </script>
-
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/1.jpeg" alt="sunset behind San Francisco city skyline">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/2.jpeg"
-                    alt="img">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/3.jpeg"
-                alt="img">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/4.jpeg"
-                alt="img">
-            </div>
-
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/5.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/6.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/7.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/8.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/9.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/10.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/11.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/12.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/13.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/22.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/21.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/14.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/15.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/16.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/17.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/18.jpeg"
-                    alt="img">
-            </div>
-            <div class="gallery-item">
-                <img class="gallery-image" src="img/distribution/19.jpeg"
-                    alt="img">
             </div>
         </div>
+
+        <!-- Modal Structure -->
+        <div id="video-modal" class="modal">
+            <div class="modal-content">
+                <button class="close" onclick="closeVideoModal(event)">&times;</button>
+                <video id="modal-video" controls autoplay></video>
+            </div>
+        </div>
+
+        <!-- CSS Styles -->
+        <style>
+            .gallery-container {
+                padding: 20px;
+            }
+
+            .gallery-toggle {
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .gallery-toggle button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: white;
+                cursor: pointer;
+            }
+
+            .gallery-toggle button:hover {
+                background-color: #0056b3;
+            }
+
+            .gallery {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+
+            .gallery-item {
+                flex: 1 1 300px;
+            }
+
+            .gallery img,
+            .gallery video {
+                object-fit: cover;
+                max-height: 300px;
+                /* Set maximum height for consistent layout */
+                width: auto;
+            }
+
+            .gallery-placeholder {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 200px;
+                background-color: #f0f0f0;
+                color: #aaa;
+                text-decoration: none;
+                font-size: 16px;
+                border-radius: 5px;
+            }
+
+            .modal .close {
+                font-size: 30px;
+                /* Increase font size */
+                background-color: #ff0000;
+                /* Optional: Add background color */
+                color: white;
+                border: none;
+                border-radius: 50%;
+                padding: 10px 15px;
+                cursor: pointer;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 2;
+            }
+
+            /* Modal styles are the same as before */
+        </style>
+
+        <!-- JavaScript Functions -->
+        <script>
+            // Toggle between Images and Videos
+            function showGallery(type) {
+                const imageGallery = document.getElementById('image-gallery');
+                const videoGallery = document.getElementById('video-gallery');
+
+                if (type === 'images') {
+                    imageGallery.style.display = 'flex';
+                    videoGallery.style.display = 'none';
+                } else if (type === 'videos') {
+                    imageGallery.style.display = 'none';
+                    videoGallery.style.display = 'flex';
+                }
+            }
+
+            // Open Video Modal
+            function openVideoModal(videoSrc) {
+                const modal = document.getElementById('video-modal');
+                const modalVideo = document.getElementById('modal-video');
+
+                modal.style.display = 'flex';
+                modalVideo.src = videoSrc;
+                modalVideo.play();
+            }
+
+            // Close Video Modal
+            function closeVideoModal(event) {
+                event.stopPropagation();
+                const modal = document.getElementById('video-modal');
+                const modalVideo = document.getElementById('modal-video');
+
+                modal.style.display = 'none';
+                modalVideo.pause();
+                modalVideo.src = '';
+            }
+
+            // Close Modal on Outside Click
+            window.onclick = function (event) {
+                const modal = document.getElementById('video-modal');
+                if (event.target === modal) {
+                    closeVideoModal(event);
+                }
+            };
+        </script>
+
 
     </div>
     <!-- Body Ends -->
@@ -465,14 +503,17 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-contact">
                         <h2>Our Head Office</h2>
-                        <p><i class="fa fa-map-marker-alt"></i>  Office No.4, Ashtvinayak society no.5 Kalyan Thane (M Corp.) Titwala East 421605</p>
+                        <p><i class="fa fa-map-marker-alt"></i> Office No.4, Ashtvinayak society no.5 Kalyan Thane (M
+                            Corp.) Titwala East 421605</p>
                         <p><i class="fa fa-phone-alt"></i> +91-8424848913</p>
                         <p><i class="fa fa-envelope"></i> connecthumanityfoundation@gmail.com</p>
                         <div class="footer-social">
                             <!-- <a class="btn btn-custom" href=""><i class="fab fa-twitter"></i></a> -->
                             <!-- <a class="btn btn-custom" href=""><i class="fab fa-facebook-f"></i></a> -->
                             <!-- <a class="btn btn-custom" href=""><i class="fab fa-youtube"></i></a> -->
-                            <a class="btn btn-custom" href="https://www.instagram.com/connect_humanity_foundation?igsh=dHFhMXoyMTJyYnA3"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-custom"
+                                href="https://www.instagram.com/connect_humanity_foundation?igsh=dHFhMXoyMTJyYnA3"><i
+                                    class="fab fa-instagram"></i></a>
                             <a class="btn btn-custom" href="https://wa.link/9ihdgb"><i class="fab fa-whatsapp"></i></a>
                             <!-- <a class="btn btn-custom" href=""><i class="fab fa-linkedin-in"></i></a> -->
                         </div>
@@ -501,6 +542,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                 <td style="color:white">IDFB0040114</td>
                             </tr>
                             <tr>
+                                <td style="color:white"><strong>REGD No:<strong></td>
+                                <td style="color:white"> E-0038171(GBR)</td>
+                            </tr>
+                            <tr>
                                 <td style="color:white"><strong>NGO PAN Number:</strong></td>
                                 <td style="color:white">AADTC2891C</td>
                             </tr>
@@ -511,10 +556,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
                             <tr>
                                 <td style="color:white"><strong>NGO Darpan:</strong></td>
                                 <td style="color:white">E-38171(Mumbai)</td>
-                            </tr>
-                            <tr>
-                                <td style="color:white"><strong>REGD No:<strong></td>
-                                <td style="color:white"> E-0038171(GBR)</td>
                             </tr>
                         </table>
                     </div>
